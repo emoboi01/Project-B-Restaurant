@@ -23,7 +23,7 @@ namespace Restaurant{
             do
             {
                 Dish.dishDetails(userInput);
-                Console.WriteLine("\npress escape to go back to the main menu");
+                Console.WriteLine("\npress escape to go back to the current menu");
                 input = Console.ReadKey(true);  
             }
             while (input.Key != ConsoleKey.Escape);

@@ -230,7 +230,6 @@ namespace Restaurant
         {
             string json = File.ReadAllText(@"DataSources/Dishes.json");
             Dictionary<string, List<Dish>> menu = JsonConvert.DeserializeObject<Dictionary<string, List<Dish>>>(json);
-            
             List<Dish> dishes = menu[month];
 
             Dish dishToRemove = dishes.FirstOrDefault(dish => dish.ID == ID);
